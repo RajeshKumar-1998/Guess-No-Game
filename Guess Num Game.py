@@ -28,15 +28,19 @@ def ran():
                print("Are You Guessed The Correct Number ")
                time.sleep(3)
                print('Hurrah! You Guessed correct one \U0001f600')
+        elif inp > Guess:
+               print("Are You Guessed The Correct Number ")
+               time.sleep(3)
+               print("Alas! You Gone Wrong,Please Try Another Time ")
+               print("You have guessed too high! \U0001F61C")
 
-        else:
-            print("Are You Guessed The Correct Number ")
-            time.sleep(3)
-            print("Alas! You Gone Wrong,Please Try Another Time ")
-            print("\U0001F61C")
-            print("Correct one is:",Guess)
-
+        elif inp < Guess:
+               print("Are You Guessed The Correct Number ")
+               time.sleep(3)
+               print("Alas! You Gone Wrong,Please Try Another Time ")
+               print("You have guessed too low! \U0001F61C")
     else:
+
          raise IOError("Please Enter the no between 1 and 10")
 
     return
